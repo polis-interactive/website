@@ -10,7 +10,7 @@ export default function Document() {
                     rel="stylesheet"
                 />
                 <meta name="description" content="Polis interactive, a tech forward installation group" />
-                <link rel="icon" href="/images/favicon.ico" />
+                <link rel="icon" href="/images/site/favicon.ico" />
             </Head>
             <body>
             <Main />

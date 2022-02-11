@@ -31,6 +31,7 @@ export type BlogMetaProps = { blogMeta: Array<BlogMetaData & ContentSlug> }
 export type PortfolioData = {
     title: string
     date: Date,
+    hero?: string,
     location: string,
     client?: string,
     event?: string

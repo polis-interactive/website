@@ -37,18 +37,18 @@ function HeaderContent() {
                         ref={mobileNavBtnRef}
                         onClick={mobileNav.onOpen}
                         aria-label='Open Menu'
-                        faIconName='bars'
+                        faiconname='bars'
                     />
                 </Flex>
                 <Flex align='center'>
                     <NextLink href='/' passHref>
                         <chakra.a display='block' aria-label='Chakra UI, Back to homepage'>
                             <chakra.img
-                                src={require('public/images/polis_logo_h60.png')}
+                                src={require('public/images/site/polis_logo_h60.png')}
                                 display={{ base: 'none', md: 'block' }}
                             />
                             <chakra.img
-                                src={require('public/images/polis_icon_60.png')}
+                                src={require('public/images/site/polis_icon_60.png')}
                                 minW='3rem' display={{ base: 'block', md: 'none' }}
                             />
                         </chakra.a>

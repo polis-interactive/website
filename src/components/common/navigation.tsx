@@ -17,7 +17,7 @@ import { HeaderGridItem } from "components/common/header-item";
 import NextLink from "next/link";
 
 
-type MobileNavButtonProps = IconButtonProps & { faIconName: IconName }
+type MobileNavButtonProps = IconButtonProps & { faiconname: IconName }
 
 export const MobileNavButton = React.forwardRef(
     (props: MobileNavButtonProps, ref: React.Ref<any>) => {
@@ -28,7 +28,7 @@ export const MobileNavButton = React.forwardRef(
                 fontSize='20px'
                 variant='ghost'
                 icon={<FontAwesomeIcon
-                    icon={['fas', props.faIconName]}
+                    icon={['fas', props.faiconname]}
                     size="lg"
                 />}
                 bg='var(--color-polis-primary-0)'
@@ -113,14 +113,14 @@ export function MobileNavContent(props: MobileNavContentProps) {
                                         ref={closeBtnRef}
                                         onClick={onClose}
                                         aria-label='Close Menu'
-                                        faIconName='close'
+                                        faiconname='close'
                                     />
                                 </Flex>
                                 <Flex align='center'>
                                     <NextLink href='/' passHref>
                                         <chakra.a display='block' aria-label='Chakra UI, Back to homepage'>
                                             <chakra.img
-                                                src={require('public/images/polis_logo_h60.png')}
+                                                src={require('public/images/site/polis_logo_h60.png')}
                                             />
                                         </chakra.a>
                                     </NextLink>

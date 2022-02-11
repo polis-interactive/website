@@ -1,0 +1,14 @@
+title: "Jam Station"
+date: 2021-10-01
+location: "Austin, Tx"
+site: "Highland Collective"
+type: "Electronics"
+category: "Engineering"
+narrative: >
+  In collaboration with Studio Metric, Polis designed and built the hardware and software for the
+  Jam Station, a prototype analog Spotify Player. 
+  \n
+  Tired of bluetooth connectivity issues, the members of the Highland Collective set out to build a Spotify 
+  player for our shop sound system. Members now use a custom webapp to attach Spotify playlist to physical 
+  buttons, where a custom PCB relays physical input to a Raspberry Pi. The high tech solution masks
+  its complexity in a low tech interface, reducing the cognitive burden of wanting to play music.

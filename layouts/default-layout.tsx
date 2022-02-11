@@ -1,15 +1,14 @@
 
 import type {ReactElement} from "react";
 
-import Navbar from './modules/navbar'
-import Footer from './modules/footer'
+import Header from 'components/common/header'
+import Footer from 'components/common/footer'
 
 export default function Layout(element: ReactElement) {
     return (
         <>
-            <Navbar />
+            <Header />
             <main>{element}</main>
-            <Footer />
         </>
     )
 }

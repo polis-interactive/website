@@ -1,12 +1,11 @@
 
-import type { ReactElement } from 'react'
-import {NextPageWithLayout, BlogMetaProps, WithLayout} from "../../types";
+import {BlogMetaProps, WithLayout} from "types";
 
-import styles from '../../styles/Home.module.css'
+import styles from '../../styles/Page.module.css'
 
 import Head from 'next/head'
 import Link from 'next/link'
-import {getBlogMeta} from "../../lib/content-generators/blog";
+import {getBlogMeta} from "lib/content-generators/blog";
 import {NextPage} from "next";
 
 
@@ -26,9 +25,8 @@ const Blog: BlogPage = ({ blogMeta }: BlogMetaProps) => {
     return (
         <div className={styles.container}>
             <Head>
-                <title>Create Next App</title>
-                <meta name="description" content="Index" />
-                <link rel="icon" href="/favicon.ico" />
+                <title>Polis - Blog</title>
+                <meta name="description" content="Polis Interactive, blog directory" />
             </Head>
 
             <main className={styles.main}>

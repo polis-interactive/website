@@ -1,8 +1,8 @@
 
-import { ContentSlugParams, PortfolioPostData} from "../../types";
+import { ContentSlugParams, PortfolioPostData} from "types";
 
 import Link from 'next/link'
-import { getPortfolioSlugs, getPortfolioData } from "../../lib/content-generators/portfolio";
+import { getPortfolioSlugs, getPortfolioData } from "lib/content-generators/portfolio";
 
 export async function getStaticProps({ params }: ContentSlugParams) {
     const postData = await getPortfolioData(params.slug);
@@ -25,7 +25,7 @@ export default function PortfolioPost(post: PortfolioPostData) {
 
     return (
         <>
-            <Link href="/blog">
+            <Link href="/portfolio">
                 <a>back...</a>
             </Link>
             <h1>{post.title}</h1>

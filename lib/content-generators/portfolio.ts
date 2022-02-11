@@ -1,4 +1,4 @@
-import {ContentSlugPaths, PortfolioData, PortfolioPostData} from "../../types";
+import {ContentSlugPaths, PortfolioData, PortfolioPostData} from "types";
 import fs from "fs";
 import path from "path";
 import yaml from "js-yaml";

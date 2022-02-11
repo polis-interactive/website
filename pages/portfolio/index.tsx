@@ -1,15 +1,13 @@
 
 
-import type { ReactElement } from 'react'
-import {NextPageWithLayout, BlogMetaProps, WithLayout, PortfolioProps} from "../../types";
+import {WithLayout, PortfolioProps} from "types";
 
-import styles from '../../styles/Home.module.css'
+import styles from 'styles/Page.module.css'
 
 import Head from 'next/head'
 import Link from 'next/link'
-import {getBlogMeta} from "../../lib/content-generators/blog";
 import {NextPage} from "next";
-import {getPortfolioMeta} from "../../lib/content-generators/portfolio";
+import {getPortfolioMeta} from "lib/content-generators/portfolio";
 
 
 export async function getStaticProps() {
@@ -28,9 +26,8 @@ const Portfolio: PortfolioPage = ({ portfolioMeta }: PortfolioProps) => {
     return (
         <div className={styles.container}>
             <Head>
-                <title>Create Next App</title>
-                <meta name="description" content="Index" />
-                <link rel="icon" href="/favicon.ico" />
+                <title>Polis - Portfolio</title>
+                <meta name="description" content="Polis Interactive, portfolio directory" />
             </Head>
 
             <main className={styles.main}>
@@ -39,7 +36,7 @@ const Portfolio: PortfolioPage = ({ portfolioMeta }: PortfolioProps) => {
                     <a>back...</a>
                 </Link>
                 <section>
-                    <h2>Blog</h2>
+                    <h2>Portfolio</h2>
                     <ul>
                         {portfolioMeta.map(({ slug, date, title }) => (
                             <li key={slug}>

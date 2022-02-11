@@ -1,8 +1,8 @@
 
 import { getMDXComponent } from "mdx-bundler/client";
 import { useMemo } from "react";
-import { getBlogSlugs, getBlogData } from "../../lib/content-generators/blog";
-import {ContentSlug, BlogPostData, ContentSlugParams} from "../../types";
+import { getBlogSlugs, getBlogData } from "lib/content-generators/blog";
+import { BlogPostData, ContentSlugParams } from "types";
 
 import Link from 'next/link'
 

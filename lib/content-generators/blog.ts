@@ -7,7 +7,7 @@ import yaml from "js-yaml";
 import remarkGfm from "remark-gfm"
 // @ts-ignore
 import rehypePrism from '@mapbox/rehype-prism'
-import {BlogPostData, ContentSlugPaths} from "../../types";
+import {BlogPostData, ContentSlugPaths} from "types";
 import matter from "gray-matter";
 
 const blogDirectory = path.join(process.cwd(), "content", "blog");

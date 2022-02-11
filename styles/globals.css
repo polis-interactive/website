@@ -1,8 +1,21 @@
+
+:root {
+  --color-polis-primary: rgb(11, 186, 183);
+  --color-polis-primary-0: rgba(11, 186, 183, 0.0);
+  --color-polis-primary-25: rgba(11, 186, 183, 0.25);
+  --color-polis-primary-50: rgba(11, 186, 183, 0.5);
+  --color-polis-secondary: #5D609C;
+  --color-polis-white: #F7F7F9;
+  --color-polis-grey: #636C72;
+  --color-polis-black: #292B2C;
+}
+
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 

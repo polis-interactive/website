@@ -6,6 +6,8 @@ client: "Austin Art in Public Places (AIPP)"
 type: "Permanent Installation"
 category: "Art"
 hero: "/images/portfolio/like-water/like_water_hero.jpg"
+credits:
+  - Video by <a href="https://www.2perf.us/">2perf Productions</a>
 narrative: >
   Commissioned by AIPP, Like Water is a collaborative effort with local artist J Muzacz 
   to create something innovative, unique, and personal for the residents of the Rosewood Neighborhood. 

@@ -40,7 +40,7 @@ const Portfolio: PortfolioPage = ({ portfolioMeta }: PortfolioProps) => {
                     <Heading
                         as='h2' size='lg' fontStyle='italic'
                         mt={{base: '0.75rem', md:'0.25rem'}}
-                    >*Or projects we've deemed viewable by the general public</Heading>
+                    >*Or projects we&apos;ve deemed viewable by the general public</Heading>
                 </chakra.header>
                 <chakra.main mt="5rem">
                     <Grid

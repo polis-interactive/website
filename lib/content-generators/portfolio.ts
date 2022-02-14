@@ -49,13 +49,28 @@ export function getPortfolioSlugs(): ContentSlugPaths {
 }
 
 export async function getPortfolioData(slug: string): Promise<PortfolioPostData> {
+
+    let postData: { [p: string]: any } = { slug }
+
+    const meta = getPortfolioMeta()
+
+    const index = meta.findIndex(s => s.slug === slug)
+
+    if (index !== 0) {
+        postData.previous = meta[index - 1].slug
+    }
+
+    if (index !== meta.length - 1) {
+        postData.next = meta[index + 1].slug
+    }
+
     const fullPath = path.join(portfolioDirectory, `${slug}.yaml`);
     const fileContents = fs.readFileSync(fullPath, 'utf8')
     const data =  yaml.load(fileContents, { schema: yaml.JSON_SCHEMA }) as object
 
     // @ts-ignore
     return {
-        slug,
+        ...postData,
         ...data
     }
 }

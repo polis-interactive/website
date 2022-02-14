@@ -38,6 +38,9 @@ export type PortfolioData = {
     site?: string
     price?: number,
     credits? : Array<string>,
+    media? : Array<string>,
+    previous?: string,
+    next?: string,
     type: string,
     category: string
     narrative: string

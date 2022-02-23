@@ -1,14 +1,16 @@
 
-import {BlogMetaProps, WithLayout} from "types";
 
 import styles from '../../styles/Page.module.css'
 
 import Head from 'next/head'
+
+import {NextPage} from "next";
+import {Flex, Heading, Text, Box} from "@chakra-ui/react";
+
+/*
+import {BlogMetaProps, WithLayout} from "types";
 import Link from 'next/link'
 import {getBlogMeta} from "lib/content-generators/blog";
-import {NextPage} from "next";
-
-
 export async function getStaticProps() {
     const blogMeta = getBlogMeta()
     return {
@@ -55,6 +57,29 @@ const Blog: BlogPage = ({ blogMeta }: BlogMetaProps) => {
     )
 }
 
+ */
+
+const Blog: NextPage = () => {
+    return (
+        <Box className={styles.container}>
+            <Head>
+                <title>Polis - Blog</title>
+                <meta name="description" content="Polis Interactive, blog directory" />
+            </Head>
+            <Box
+                className={styles.centerContainerContent}
+            >
+                <Heading as='h2' size='xl'>
+                    Alright Y&apos;all...
+                </Heading>
+                <Text maxW='600px' textAlign='center' mt='1rem'>
+                    There&apos;s going to be some super serious blog content here in the future,
+                    detailing like how we make everything. For now, just grin and bare with us :D
+                </Text>
+            </Box>
+        </Box>
+    )
+}
 
 export default Blog
 

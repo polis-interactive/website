@@ -34,7 +34,7 @@ const Portfolio: PortfolioPage = ({ portfolioMeta }: PortfolioProps) => {
                 <title>Polis - Portfolio</title>
                 <meta name="description" content="Polis Interactive, portfolio directory" />
             </Head>
-            <chakra.section pt="1rem" pb="2rem">
+            <chakra.section>
                 <chakra.header>
                     <Heading as='h1' size='3xl'>Portfolio</Heading>
                     <Heading

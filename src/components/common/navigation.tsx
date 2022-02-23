@@ -2,11 +2,11 @@ import * as React from 'react'
 
 import {
     IconButton, IconButtonProps,
-    Flex, Box, Grid,
-    useBreakpointValue, useUpdateEffect, HStack, chakra
+    Flex, Grid,
+    useBreakpointValue, useUpdateEffect, chakra
 } from "@chakra-ui/react";
 
-import { AnimatePresence, motion, useElementScroll } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
 import { RemoveScroll } from 'react-remove-scroll'
 
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";

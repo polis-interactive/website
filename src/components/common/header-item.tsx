@@ -2,7 +2,7 @@ import NextLink from "next/link";
 import {chakra, GridItem, Flex} from "@chakra-ui/react";
 import React from "react";
 
-import styles from 'styles/Header.module.css'
+import styles from 'styles/Component.module.css'
 
 import { useRouter } from "next/router";
 

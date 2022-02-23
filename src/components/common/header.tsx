@@ -82,6 +82,7 @@ export default function Header() {
             left='0'
             right='0'
             width='full'
+            flex='0 0 auto'
         >
             <chakra.div height='80px' mx='auto' maxW='8xl'>
                 <HeaderContent />

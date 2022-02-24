@@ -13,7 +13,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 import useRouteChanged from 'hooks/use-route-changed'
 import {IconName} from "@fortawesome/fontawesome-svg-core";
-import { HeaderGridItem } from "components/common/header-item";
+import { HeaderGridItem } from "components/layout/header-item";
 import NextLink from "next/link";
 
 

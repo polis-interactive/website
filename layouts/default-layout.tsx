@@ -3,8 +3,8 @@ import type {ReactElement} from "react";
 
 import { Flex, chakra } from '@chakra-ui/react'
 
-import Header from 'components/common/header'
-import Footer from 'components/common/footer'
+import Header from 'components/layout/header'
+import Footer from 'components/layout/footer'
 
 import styles from 'styles/Page.module.css'
 

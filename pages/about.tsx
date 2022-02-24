@@ -46,14 +46,6 @@ const About: NextPage = () => {
                     one if you&apos;d care to hear us rant about them!
                 </Text>
                 <Competencies />
-                <Heading as='h2' className={aboutStyles.mainHeader}>Meet the team :D</Heading>
-                <Text className={aboutStyles.mainParagraph}>
-                    So what exactly does Polis <chakra.span fontWeight='bold'>DO</chakra.span>? We
-                    ask ourselves this everyday... we have no &quot;core-competency&quot;, rather we like
-                    to tackle interesting and hard problems. The following is a non-exhaustive list of abilities
-                    we&apos;d like to brag about. If broose did his job right, you should be able to tap on each
-                    one if you&apos;d care to hear us rant about them!
-                </Text>
             </Box>
         </Box>
     )

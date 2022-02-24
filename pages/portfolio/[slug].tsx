@@ -9,11 +9,7 @@ import {
     Text,
     VStack,
     Box,
-    IconButton,
-    IconButtonProps,
     useMediaQuery,
-    useBreakpointValue,
-    Button
 } from "@chakra-ui/react";
 import styles from "styles/Page.module.css";
 import Head from "next/head";
@@ -59,7 +55,14 @@ function ParseMediaBlock(m: Array<string>): JSX.Element {
                     src={`${item}?amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479`}
                     frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen
                     className={styles.vimeo}
-                    title="Creek Show 2018 - Ambedo Beta"
+                />
+            );
+        } else if (item.includes('youtube')) {
+            element = (
+                <iframe
+                    src={`${item}?amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479`}
+                    frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen
+                    className={styles.youtube}
                 />
             );
         } else {

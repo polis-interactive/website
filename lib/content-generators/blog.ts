@@ -77,6 +77,7 @@ export async function getBlogData(slug: string): Promise<BlogPostData> {
             options.rehypePlugins = [...(options.rehypePlugins ?? []), rehypePrism]
             return options
         },
+        cwd: path.join(process.cwd(), 'src', 'components'),
     })
 
     return {

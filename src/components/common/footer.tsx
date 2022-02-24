@@ -22,6 +22,7 @@ const FooterIcon = ({ icon, href, aria }: FooterIconProps) => {
         >
             <FontAwesomeIcon
                 icon={icon}
+                height='24px'
                 //@ts-ignore
                 size='xl'
             />

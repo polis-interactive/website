@@ -218,7 +218,7 @@ export default function PortfolioPost(post: PortfolioPostData) {
                     </VStack>
                     <VStack align='start' pt='1.25rem' spacing={0.5}>
                         <Text fontWeight='bold'>Narrative</Text>
-                        <Text fontSize='sm'>{post.narrative}</Text>
+                        <Text fontSize='sm'  dangerouslySetInnerHTML={{__html: post.narrative }}/>
                     </VStack>
                     { extraPostData }
                 </Flex>

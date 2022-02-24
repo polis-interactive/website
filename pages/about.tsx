@@ -2,8 +2,9 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import pageStyles from 'styles/Page.module.css'
 import aboutStyles from 'styles/About.module.css'
-import {Box, Heading, Text, chakra} from "@chakra-ui/react";
+import {Box, Heading, Text, chakra, Center} from "@chakra-ui/react";
 import { Competencies } from "components/about/competencies";
+import React from "react";
 
 const About: NextPage = () => {
     return (
@@ -14,8 +15,20 @@ const About: NextPage = () => {
             </Head>
             <Box
                 className={aboutStyles.container}
-                mt={{ base: 0, md: '1rem', lg: '3rem' }}
             >
+
+                <Heading as='h2' size='2xl'>We-Are-Polis-</Heading>
+                <Heading as='h3' className={aboutStyles.mainHeader} size='md'>Bum, Ba-dum Bum, Bum Bum Bum!</Heading>
+                <Center
+                    className={aboutStyles.mainParagraph}
+                >
+                    <chakra.img
+                        src={require('public/images/about/polis_fun.jpg')}
+                        width='90%'
+                        maxWidth={{ base: 'unset', md: '700px'}}
+                    />
+                </Center>
+
                 <Heading as='h2' className={aboutStyles.mainHeader}>Mission Statement!</Heading>
                 <Text className={aboutStyles.mainParagraph}>
                     Polis is a tech forward installation group based in Austin, Texas.

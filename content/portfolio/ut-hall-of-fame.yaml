@@ -5,6 +5,13 @@ site: "University of Texas at Austin"
 type: "Perminant Installation"
 category: "Architectural Lighting"
 hero: "/images/portfolio/ut-hof/ut_hof_hero.jpg"
+media:
+  - https://www.youtube.com/embed/uqyVtRqHiBk
+  - "/images/portfolio/ut-hof/ut_hof_1.jpg"
+  - "/images/portfolio/ut-hof/ut_hof_3.jpg"
+  - "/images/portfolio/ut-hof/ut_hof_5.jpeg"
+  - "/images/portfolio/ut-hof/ut_hof_2.jpg"
+  - "/images/portfolio/ut-hof/ut_hof_4.jpg"
 narrative: >
-  Polis designed, procured, and installed the artistic lighting for the University 
-  of Texas Hall of Fame, located at the North End Zone of the UT football stadium.
+  Polis designed, procured, and installed artistic lighting for the University 
+  of Texas Hall of Honor, located at the North End Zone of the UT football stadium.

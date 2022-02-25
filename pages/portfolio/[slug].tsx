@@ -12,6 +12,7 @@ import {
     useMediaQuery,
 } from "@chakra-ui/react";
 import styles from "styles/Page.module.css";
+import slugStyles from "styles/PortfolioSlug.module.css"
 import Head from "next/head";
 import React from "react";
 
@@ -50,27 +51,36 @@ function ParseMediaBlock(m: Array<string>): JSX.Element {
     m.forEach((item, i) => {
         let element: JSX.Element;
         if (item.includes('vimeo')) {
+            const className = item.includes('iphone') ? slugStyles.vimeoIphone : slugStyles.vimeo
             element = (
                 <iframe
                     src={`${item}?amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479`}
                     frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen
-                    className={styles.vimeo}
+                    className={className}
                 />
             );
         } else if (item.includes('youtube')) {
+            const className = item.includes('iphone') ? slugStyles.youtubeIphone : slugStyles.youtube
             element = (
                 <iframe
                     src={`${item}?amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479`}
                     frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen
-                    className={styles.youtube}
+                    className={className}
                 />
             );
         } else {
             element = (<chakra.img src={item} width="100%" />)
         }
-        elements.push(<chakra.div key={`media-${i}`} position="relative" width="100%">{ element }</chakra.div>)
+        elements.push(
+            <Flex
+                key={`media-${i}`} position="relative" width="100%"
+                flexDirection='row' justify='center'
+            >
+                { element }
+            </Flex>
+        )
     })
-    return (<VStack> { elements }</VStack>)
+    return (<VStack width='100%'> { elements }</VStack>)
 }
 
 type navButtonProps = {

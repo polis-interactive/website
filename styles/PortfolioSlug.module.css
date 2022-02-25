@@ -1,0 +1,17 @@
+.vimeo, .youtube {
+    width:100%;
+    height:auto;
+    aspect-ratio: 16 / 9;
+}
+
+.vimeoIphone, .youtubeIphone {
+    max-height: 500px;
+    aspect-ratio: 9 / 16;
+}
+
+@media only screen and (max-width: 600px) {
+    .vimeoIphone, .youtubeIphone {
+        max-height: 400px;
+        aspect-ratio: 9 / 16;
+    }
+}

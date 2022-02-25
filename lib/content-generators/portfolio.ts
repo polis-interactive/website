@@ -8,7 +8,7 @@ const portfolioDirectory = path.join(process.cwd(), "content", "portfolio");
 export function getPortfolioMeta() {
 
     const fileNames = fs.readdirSync(portfolioDirectory)
-    const allPostsData = fileNames.map(fileName => {
+    const allPostsData = fileNames.filter(f => f.indexOf('WIP') !== 0).map(fileName => {
         // Remove ".md" from file name to get id
         const slug = fileName.replace(/\.yaml$/, '')
 
@@ -39,7 +39,7 @@ export function getPortfolioMeta() {
 
 export function getPortfolioSlugs(): ContentSlugPaths {
     const fileNames = fs.readdirSync(portfolioDirectory)
-    return fileNames.map(fileName => {
+    return fileNames.filter(f => f.indexOf('WIP') !== 0).map(fileName => {
         return {
             params: {
                 slug: fileName.replace(/\.yaml$/, '')

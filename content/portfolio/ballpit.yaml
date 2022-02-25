@@ -5,6 +5,10 @@ client: "Hopscotch Gallery"
 type: "Permanent Installation"
 category: "Art"
 hero: "/images/portfolio/ballpit/ballpit_hero.jpg"
+media:
+  - "/images/portfolio/ballpit/ballpit_1.jpg"
+  - "/images/portfolio/ballpit/ballpit_2.jpg"
+  - "/images/portfolio/ballpit/ballpit_3.jpg"
 narrative: >
   Color Therapy is an alternative remedy that uses color and light to treat physical 
   or mental health by balancing the body's energy centers. This installation celebrates 

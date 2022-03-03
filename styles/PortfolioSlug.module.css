@@ -9,10 +9,10 @@
     aspect-ratio: 9 / 16;
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
     .vimeoIphone, .youtubeIphone {
-        max-height: 400px;
-        aspect-ratio: 9 / 16;
+        height: 400px;
+        width: 300px;
     }
 }
 

@@ -7,7 +7,7 @@ type: "Permanent Installation"
 category: "Art"
 hero: "/images/portfolio/like-water/like_water_hero.jpg"
 credits:
-  - Video by <a href="https://www.2perf.us/">2perf Productions</a>
+  - Video by <a href="https://www.2perf.us/" target="_blank">2perf Productions</a>
 media:
   - https://player.vimeo.com/video/619439156?h=6b9eee81ae
   - "/images/portfolio/like-water/like_water_1.jpg"

@@ -15,3 +15,12 @@
         aspect-ratio: 9 / 16;
     }
 }
+
+.couldContainLink a {
+    color: var(--chakra-colors-blue-500);
+    text-decoration: underline;
+}
+
+.couldContainLink a:hover {
+    color: var(--chakra-colors-blue-700);
+}

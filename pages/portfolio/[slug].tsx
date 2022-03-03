@@ -122,6 +122,7 @@ function NavButton({faiconnamebase, faiconnamelg, link, aria, text}: navButtonPr
                 <FontAwesomeIcon
                     icon={['fas', isMinWidthLg ? faiconnamelg : faiconnamebase]}
                     size="lg"
+                    height='25px'
                 />
                 <Text
                     pt='0.25rem' fontSize='md' fontWeight='bold'
@@ -172,7 +173,7 @@ export default function PortfolioPost(post: PortfolioPostData) {
         const credits: JSX.Element[] = [];
         post.credits.forEach((credit, i) => {
             credits.push(
-                <Text key={`credit-${i}`}>
+                <Text key={`credit-${i}`} className={slugStyles.couldContainLink}>
                     { ReactHtmlParser(credit) }
                 </Text>
             );

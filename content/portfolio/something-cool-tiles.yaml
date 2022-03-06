@@ -4,8 +4,13 @@ location: "Austin, Tx"
 client: "Something Cool Studios"
 type: "Permanent Installation"
 category: "Art"
+hero: "/images/portfolio/something-cool-tiles/something_cool_tiles_hero.jpg"
 media:
   - https://player.vimeo.com/video/684798895?h=b1d56c73f0
+  - "/images/portfolio/something-cool-tiles/something_cool_tiles_1.jpg"
+  - "/images/portfolio/something-cool-tiles/something_cool_tiles_2.jpg"
+  - "/images/portfolio/something-cool-tiles/something_cool_tiles_3.jpg"
+  - "/images/portfolio/something-cool-tiles/something_cool_tiles_4.jpg"
 narrative: >
   Hot on the backlit mosaic tile bandwagon, we bring you lit up 80's glass blocks!
   <br /><br />

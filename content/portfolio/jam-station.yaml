@@ -4,8 +4,10 @@ location: "Austin, Tx"
 site: "Highland Collective"
 type: "Electronics"
 category: "Engineering"
+hero: "/images/portfolio/jam-station/jam_station_hero.jpg"
 media:
   - https://player.vimeo.com/video/681989139?h=73aa0c9006&iphone=true
+  - "/images/portfolio/jam-station/jam_station_1.jpg"
 narrative: >
   In collaboration with Studio Metric, Polis designed and built the hardware and software for the
   Jam Station, a prototype analog Spotify Player. 

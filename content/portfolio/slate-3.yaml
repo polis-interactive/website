@@ -5,6 +5,12 @@ type: "Private Piece"
 price: 4800
 category: "Art"
 hero: "/images/portfolio/slate-3/slate_3_hero.jpg"
+media:
+  - https://player.vimeo.com/video/655059893?h=34e044656c
+  - "/images/portfolio/slate-3/slate_3_1.jpg"
+  - "/images/portfolio/slate-3/slate_3_2.jpg"
+  - "/images/portfolio/slate-3/slate_3_3.jpg"
+  - "/images/portfolio/slate-3/slate_3_4.jpg"
 narrative: >
   In collaboration with J Muzacz, the third piece in our Slate series, Molten Pearl represents 
   our first experimentation of complex mosaic composition using our backlit mosaic techniques. 

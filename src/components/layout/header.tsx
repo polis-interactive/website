@@ -41,7 +41,7 @@ function HeaderContent() {
                     />
                 </Flex>
                 <Flex align='center'>
-                    <NextLink href='/' passHref>
+                    <NextLink href='/portfolio' passHref>
                         <chakra.a display='block' aria-label='Chakra UI, Back to homepage'>
                             <chakra.img
                                 src={require('public/images/site/polis_logo_h60.png')}

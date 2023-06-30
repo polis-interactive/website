@@ -1,14 +1,14 @@
-title: "Color Therapy"
-date: 2020-09-01
-location: "San Antonio, Tx"
+title: "Augmented Normalcy"
+date: 2023-06-04
+location: "Portland, Oregon"
 client: "Hopscotch Gallery"
 type: "Permanent Installation"
 category: "Art"
-hero: "/images/portfolio/color-therapy/color_therapy_hero.jpg"
+hero: "/images/portfolio/augmented-normalcy/normalcy_hero.jpg"
 media:
-  - "/images/portfolio/color-therapy/color_therapy_1.jpg"
-  - "/images/portfolio/color-therapy/color_therapy_2.jpg"
-  - "/images/portfolio/color-therapy/color_therapy_3.jpg"
+  - "/images/portfolio/augmented-normalcy/normalcy_1.jpg"
+  - "/images/portfolio/augmented-normalcy/normalcy_2.jpg"
+  - "/images/portfolio/augmented-normalcy/normalcy_3.jpg"
 
 narrative: >
   Color Therapy is an alternative remedy that uses color and light to treat physical 

@@ -4,6 +4,8 @@ location: "Austin, Tx"
 client: "Texas Harm Reduction"
 type: "Electronics"
 category: "Engineering"
+credits:
+  - Project managed and primarily fabricated by Cheraya Esters of Meow Wolf
 narrative: >
   Polis recently had the privilege of doing the electrical buildout for the Texas Harm Reduction Alliance (THRA)’s new mobile
   clinic. The mobile clinic provides outreach to Austin’s most vulnerable communities, providing them

@@ -1,12 +1,12 @@
 import '../styles/globals.css'
-import type { NextPageWithLayout } from 'types'
-import type { AppProps } from 'next/app'
+import type {NextPageWithLayout} from 'types'
+import type {AppProps} from 'next/app'
 
 import Layout from 'layouts/default-layout'
 
 import '../src/assets/fontawesome'
 
-import { ChakraProvider } from '@chakra-ui/react'
+import {ChakraProvider, ColorModeScript} from '@chakra-ui/react'
 
 import theme from '../src/assets/theme'
 
@@ -23,13 +23,17 @@ function App({ Component, pageProps }: AppPropsWithLayout) {
 
   const getLayout = Component.getLayout
       ? Component.getLayout
-      : Layout
+      : Layout;
+
+  theme.config.initialColorMode = Component.wantsDark
+    ? 'dark'
+    : 'light';
 
   return (
       <>
-          <Head>
-              <title>Polis Interactive</title>
-          </Head>
+        <Head>
+          <title>Polis Interactive</title>
+        </Head>
         <ChakraProvider theme={theme}>
             { getLayout(<Component {...pageProps} />) }
         </ChakraProvider>

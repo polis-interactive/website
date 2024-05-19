@@ -1,0 +1,92 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem 2rem 2rem;
+}
+
+.centerContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:1rem;
+}
+
+.centerContainerContent {
+    position: relative;
+}
+
+.wordArtWrapper {
+    display: block;
+    position: absolute;
+    left: -50%;
+    top: -15%;
+}
+
+.wordArt {
+    transform: scale(0.9, 1.65) rotate(-6deg) skewY(-3deg) translateZ(0);
+    position: relative;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 570px){
+    .centerContainerContent {
+        padding-top: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .wordArtWrapper {
+        position: relative;
+        left: 0.5rem;
+        top: unset;
+        flex: 2 2 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .spacer {
+        flex: 1 1 0;
+    }
+    .wordArt {
+        transform: scale(0.9, 1.65) rotate(-2deg) skewY(-2deg) translateZ(0);
+    }
+    .formContainer {
+        flex: 0 0 auto;
+    }
+
+}
+
+
+
+.wordArtStyle11 {
+    font-family: Arial, sans-serif !important;
+    display: block;
+    font-weight: 900 !important;
+    color: transparent;
+    background: linear-gradient(to left, #a104ad, #0b2be0, #329941, #f7f658, #f16412, #e92153, #aa04a7);
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.025em rgba(255,255,255,.5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    letter-spacing: 0.1rem;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.wordArtStyle11::before {
+    content: 'WATER HOUNDS';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    color: rgba(100,116,139,.5);
+    -webkit-text-fill-color: rgba(100,116,139,.5);
+    -webkit-text-stroke: transparent;
+    transform: rotateX(63deg) skew(60deg) scaleY(0.65) translate3d(2em, -2.15em, -1em);
+    box-sizing: border-box;
+}

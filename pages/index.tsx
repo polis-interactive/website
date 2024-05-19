@@ -1,7 +1,6 @@
 import type { NextPage } from 'next'
 import styles from 'styles/Page.module.css'
 import {Box, Heading, Text} from "@chakra-ui/react";
-import Head from "next/head";
 
 const Home: NextPage = () => {
   return (

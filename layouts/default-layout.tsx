@@ -6,8 +6,6 @@ import { Flex, chakra } from '@chakra-ui/react'
 import Header from 'components/layout/header'
 import Footer from 'components/layout/footer'
 
-import styles from 'styles/Page.module.css'
-
 export default function Layout(element: ReactElement) {
     return (
         <Flex as={chakra.section} direction='column' minHeight='100vh'>

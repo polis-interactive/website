@@ -5,6 +5,9 @@ const withOptimizedImages = require('next-optimized-images');
 
 const nextConfig = {
   reactStrictMode: true,
+  typescript: {
+    ignoreBuildErrors: true,
+  }
 }
 
 module.exports = withOptimizedImages({

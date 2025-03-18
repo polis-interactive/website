@@ -1,0 +1,62 @@
+[workspace]
+resolver = "2"
+members = ["crates/polis", "crates/front", "crates/admin", "crates/server"]
+
+[workspace.dependencies]
+leptos = { version = "0.7.0", features = ["nightly"] }
+leptos_router = { version = "0.7.0", features = ["nightly"] }
+axum = { version = "0.7" }
+console_error_panic_hook = "0.1.7"
+leptos_axum = { version = "0.7.0" }
+leptos_meta = { version = "0.7.0" }
+tokio = { version = "1", features = ["rt-multi-thread"] }
+wasm-bindgen = { version = "=0.2.100" }
+futures = "0.3.1"
+tower = "0.5.2"
+tower-http = "0.6.2"
+log = "0.4.20"
+console_log = "1"
+
+[profile.wasm-release]
+inherits = "release"
+opt-level = 'z'
+lto = true
+codegen-units = 1
+panic = "abort"
+
+[[workspace.metadata.leptos]]
+name = "admin"
+lib-package = "admin"
+site-root = "target/site/admin"
+site-pkg-dir = "pkg"
+site-addr = "127.0.0.1:3100"
+reload-port = 3101
+browserquery = "defaults"
+env = "DEV"
+bin-features = []
+bin-default-features = false
+lib-features = ["hydrate"]
+lib-default-features = false
+lib-profile-release = "wasm-release"
+front-path = "front-admin"
+
+[[workspace.metadata.leptos]]
+name = "polis"
+lib-package = "front"
+site-root = "target/site/polis"
+site-pkg-dir = "pkg"
+site-addr = "127.0.0.1:3200"
+reload-port = 3201
+browserquery = "defaults"
+env = "DEV"
+lib-profile-release = "wasm-release"
+front-path = "front-polis"
+
+[[workspace.metadata.leptos]]
+name = "server"
+bin-package = "server"
+site-root = "target/server"
+site-pkg-dir = "pkg"
+site-addr = "127.0.0.1:3000"
+reload-port = 3001
+env = "DEV"
